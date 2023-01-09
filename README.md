@@ -18,11 +18,14 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 - Fazer a validação dos dados corrigindo problemas de valores negativos e erros de input no campo Age.
 
 ## Metodologia
-
+- Carregamento
 ![Input Manual com Data Grid](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/1_Manual_Input.PNG)
 ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
 ![Input de Arquivo Excel](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/3_Excel_Input.png)
 ![Input de Arquivo Zip](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/4_Zip_File_Input.png)
+- Limpeza
+- Validação e Debugging
+
 
 
 
