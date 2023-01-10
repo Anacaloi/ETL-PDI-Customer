@@ -5,19 +5,13 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 <br>[Link do Certificado](https://www.udemy.com/certificate/UC-e3f6be67-da69-4e6a-a610-b25b4cdb2c1b/)
 
 
-![Snapshot do Projeto de Transformação](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Transformacao.PNG)
-
-
-
 ## Objetivos
 - Estruturar um proccesso de ETL do zero usando Pentaho e fontes de dados em diversos formatos;
-
-![Snapshot dos formatos de dados utilizados](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/DataSources.png)
-
 - Fazer a limpeza dos dados unificando a grafia de país, corrigindo erros de digitação nos estados e removendo caracteres especiais;
 - Fazer a validação dos dados corrigindo problemas de valores negativos e erros de input no campo Age.
 
 ## Metodologia
+![Snapshot do Projeto de Transformação](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Transformacao.PNG)
 - Carregamento
 ![Input Manual com Data Grid](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/1_Manual_Input.PNG)
 ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
@@ -29,9 +23,10 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 ![Corrigindo erros de digitação com Fuzzy match](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/7_Fuzzy_Match.png)
 ![Substituindo a coluna State com os valores corrigidos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/8_Seleciona_campo_State_corrigido.png)
 - Validação e Debugging
-
-
-
+![Convertendo campo Age para Integer](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/9_Seleciona_idade_como_integer.png)
+![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
+![Filtra valores negativos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/11_Filter_Rows.png)
+![Calcula o valor absoluto](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/12_Calcula_Valor_Absoluto.png)
 
 
 ## Resultados
