@@ -35,7 +35,7 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 - Limpeza
   - A Base unificada possui os registros US, USA, United States e United States of America no campo Country.
    
-   ![Unificando a grafia de United States com Value Mapper](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/5_Value_Mapper.png)
+    ![Unificando a grafia de United States com Value Mapper](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/5_Value_Mapper.png)
     
   - Alguns registros do campo "City" possuem "#" precedendo o nome da cidade.
     
@@ -57,7 +57,7 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
     
   - Para tratar os dados com erros de iput como "o" ao invés de "0" utilizei o step "Replace in string". Com os erros corrigidos passei novamente os dados pelo step de "Select values" para conversão do campo Age para Integer.
   
-  ![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
+   ![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
   
   - Para tratar os números negativos usei o step "Filter rows" e encaminhei os valores menores que 0 para tratamento separadamente
     
@@ -65,7 +65,7 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
     
   - Fiz o tratamento dos registros de idade negativos através do step "Calculator". Utilizei o cálculo "Absolute value ABS".
    
-   ![Calcula o valor absoluto](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/12_Calcula_Valor_Absoluto.png)
+    ![Calcula o valor absoluto](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/12_Calcula_Valor_Absoluto.png)
    
   - Substitui então a coluna "Age" pela coluna com os registros tratados do passo anterior com o step "Select values"
   
