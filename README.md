@@ -18,18 +18,19 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 
   - Configurando o step "Data Grid" para o Input Manual. Tipo string permite mais tranformações
   
-    ![Input Manual com Data Grid](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/1_Manual_Input.PNG)
+     ![Input Manual com Data Grid](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/1_Manual_Input.PNG)
     
   - Para importação de Arquivos csv usei o step Text Input
   
-    ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
+     ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
     
   - Input de arquivo Excel
-    ![Input de Arquivo Excel](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/3_Excel_Input.png)
+  
+     ![Input de Arquivo Excel](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/3_Excel_Input.png)
     
    - Input de Arquivo Zip
     
-    ![Input de Arquivo Zip](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/4_Zip_File_Input.png)
+     ![Input de Arquivo Zip](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/4_Zip_File_Input.png)
     
     
 - Limpeza
@@ -57,7 +58,7 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
     
   - Para tratar os dados com erros de iput como "o" ao invés de "0" utilizei o step "Replace in string". Com os erros corrigidos passei novamente os dados pelo step de "Select values" para conversão do campo Age para Integer.
   
-   ![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
+    ![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
   
   - Para tratar os números negativos usei o step "Filter rows" e encaminhei os valores menores que 0 para tratamento separadamente
     
