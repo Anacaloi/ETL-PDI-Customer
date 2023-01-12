@@ -14,22 +14,45 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 
 ![Overview da Transformação](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Transformacao.PNG)
 - Carregamento
+
   - Configurando o step "Data Grid" para o Input Manual. Tipo string permite mais tranformações
     ![Input Manual com Data Grid](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/1_Manual_Input.PNG)
+    
   - Para importação de Arquivos csv usei o step Text Input
     ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
-![Input de Arquivo Excel](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/3_Excel_Input.png)
-![Input de Arquivo Zip](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/4_Zip_File_Input.png)
+    
+  - Input de arquivo Excel
+    ![Input de Arquivo Excel](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/3_Excel_Input.png)
+    
+   - Input de Arquivo Zip
+    ![Input de Arquivo Zip](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/4_Zip_File_Input.png)
+    
+    
 - Limpeza
-![Unificando a grafia de United States com Value Mapper](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/5_Value_Mapper.png)
-![Removendo caracteres especiais com Replace in String](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/6_Replace_in_String.png)
-![Corrigindo erros de digitação com Fuzzy match](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/7_Fuzzy_Match.png)
-![Substituindo a coluna State com os valores corrigidos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/8_Seleciona_campo_State_corrigido.png)
+  - A Base unificada possui os registros US, USA, United States e United States of America no campo Country.
+    ![Unificando a grafia de United States com Value Mapper](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/5_Value_Mapper.png)
+    
+  - Alguns registros do campo "City" possuem "#" precedendo o nome da cidade.
+    ![Removendo caracteres especiais com Replace in String](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/6_Replace_in_String.png)
+    
+  - Alguns registros possuem erros de digitação como "Twxas", "Cakifornia", entre outros.
+    ![Corrigindo erros de digitação com Fuzzy match](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/7_Fuzzy_Match.png)
+    
+  - Para substituir a coluna "State" pela coluna "State Name" utilizei o step "Select values"
+    ![Substituindo a coluna State com os valores corrigidos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/8_Seleciona_campo_State_corrigido.png)
+    
+    
 - Validação e Debugging
-![Convertendo campo Age para Integer](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/9_Seleciona_idade_como_integer.png)
-![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
-![Filtra valores negativos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/11_Filter_Rows.png)
-![Calcula o valor absoluto](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/12_Calcula_Valor_Absoluto.png)
+  - Para converter campo Age para Integer utilizei o step select values, mas encontrei 2 problemas a serem tratados: registros de idade com a letra "o" ao invés de 0 como 6o e números negativos.
+    ![Convertendo campo Age para Integer](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/9_Seleciona_idade_como_integer.png)
+  - Para tratar os dados com erros de iput como "o" ao invés de "0" utilizei o step "Replace in string". Com os erros corrigidos passei novamente os dados pelo step de "Select values" para conversão do campo Age para Integer.
+    ![Corrige "o" para "0"](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/10_Replace_in_String.png)
+  - Para tratar os números negativos usei o step "Filter rows" e encaminhei os valores menores que 0 para tratamento separadamente
+    ![Filtra valores negativos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/11_Filter_Rows.png)
+  - Fiz o tratamento dos registros de idade negativos através do step "Calculator". Utilizei o cálculo "Absolute value ABS".
+    ![Calcula o valor absoluto](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/12_Calcula_Valor_Absoluto.png)
+  - Substitui então a coluna "Age" pela coluna com os registros tratados do passo anterior com o step "Select values"
+  - Uni os 3 segmentos dos dados com o step "Sorted merge"
 
 
 ## Resultados
