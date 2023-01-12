@@ -71,7 +71,9 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
   - Substitui então a coluna "Age" pela coluna com os registros tratados do passo anterior com o step "Select values"
   
   - Uni os 3 segmentos dos dados com o step "Sorted merge"
-
+  
+  - Criei o output dos dados em Arquivo Excel como step "Microsoft Excel Output"
+      ![Excel com os dados processados](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/13_Table_output.png)
 
 ## Resultados
 ![Fontes de dados](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/DataSources.png)
