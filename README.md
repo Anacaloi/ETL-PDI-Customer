@@ -74,3 +74,6 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 
 
 ## Resultados
+![Fontes de dados](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/DataSources.png)
+![Base Unificada](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Base_Unificada.png)
+![Base tratada](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Base_Tratada.png)
