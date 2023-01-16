@@ -38,11 +38,11 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
     
     
 - Limpeza
-  - A Base unificada possui os registros US, USA, United States e United States of America no campo Country.
+  - A Base unificada possui os registros US, USA, United States e United States of America no campo Country. Utilizei o step "Value Mapper" para transformar os registros do campo "Country" para United States.
    
     ![Unificando a grafia de United States com Value Mapper](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/5_Value_Mapper.png)
     
-  - Alguns registros do campo "City" possuem "#" precedendo o nome da cidade.
+  - Alguns registros do campo "City" possuem "#" precedendo o nome da cidade. Utilizei o step "Replace in String" e configurei para que ele procurasse por "#" no campo "City" e o removesse deixando a opção "Replace with" vazia.
     
     ![Removendo caracteres especiais com Replace in String](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/6_Replace_in_String.png)
     
