@@ -16,11 +16,11 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 ![Overview da Transformação](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Transformacao.PNG)
 - Carregamento
 
-  - Configurando o step "Data Grid" para o Input Manual. Tipo string permite mais tranformações
+  - Configurando o step "Data Grid" para o Input Manual. Na primeira aba se configura a meta data, usei o tipo string para todos os campos pois ele permite mais tranformações. Na aba data é onde são manualmente inseridos os dados.
   
      ![Input Manual com Data Grid](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/1_Manual_Input.PNG)
     
-  - Para importação de Arquivos csv usei o step Text Input
+  - Para importação de Arquivos csv usei o step Text Input. A pasta que contém os arquivos dos dados possue um arquivo dummy e os arquivos que trazem registros dos estados possuem nomenclatura "CustomerData_West_" + o nome do estado ao qual pertencem. Utilizei então a expressão RegEx "CustomerData_West_.*" para que apenas os arquivos com registros fossem importados. Na aba "Content" inseri o tipo de separador e na aba "Fields" configurei a meta data de maneira semelhante aos passos anteriores.
   
      ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
     
