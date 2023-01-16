@@ -81,4 +81,4 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
 Após a importação múltiplos arquivos ".csv", arquivos de texto, input manual de dados com "Data Grid", arquivo excel e zip obtive a base unificada abaixo. Os dados retornaram alguns problemas que precisaram de limpeza.
 
 ![Base tratada](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/Base_Tratada.png)
-Após tratamento o resultado foi um arquivo ".xls" tabela dimensão com dados de clientes. As inconsistências nos campos "Age", "Country", "City" e "State" foram corrigidas com uso de diversos steps do Pentaho Data Integration ouy PDI.
+Após tratamento o resultado foi um arquivo ".xls" tabela dimensão com dados de clientes. As inconsistências nos campos "Age", "Country", "City" e "State" foram corrigidas com uso de diversos steps do Pentaho Data Integration ou PDI.
