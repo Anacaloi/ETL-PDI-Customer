@@ -46,11 +46,11 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
     
     ![Removendo caracteres especiais com Replace in String](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/6_Replace_in_String.png)
     
-  - Alguns registros possuem erros de digitação como "Twxas", "Cakifornia", entre outros.
+  - Alguns registros possuem erros de digitação como "Twxas", "Cakifornia", entre outros. Para corrigir esse tipo de problemas utilizei o step "Fussy Match" e o interliguei com um arquivo "Lookup for States" com a grafia correta dos estados. Configurei então o "Lookup Step" e e "Lookup Field" para "State Name" o campo a ser comparado da base principal ou "Main stream field" para "State". Este step possue diversos algoritmos de comparação, no caso do algoritmon de "Levenshtein" o valor da distancia equivale deleções, insersões ou substituições para que o alvo se transforme no valor de consulta. Por exemplo, texas está a uma distância de 2 de Texas. Observando os problemas da base escolhi o "Maximal value" de 2.
     
     ![Corrigindo erros de digitação com Fuzzy match](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/7_Fuzzy_Match.png)
    
-  - Para substituir a coluna "State" pela coluna "State Name" utilizei o step "Select values"
+  - Para substituir a coluna "State" pela coluna "State Name" com os registro de estado corrigidos utilizei o step "Select values"
     
     ![Substituindo a coluna State com os valores corrigidos](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/8_Seleciona_campo_State_corrigido.png)
     
