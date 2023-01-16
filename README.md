@@ -24,13 +24,17 @@ Pentaho for ETL & Data Integration Masterclass 2022 - PDI 9
   
      ![Text Input para carregar múltiplos arquivos csv](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/2_Text_Input.png)
     
-  - Input de arquivo Excel
+  - No input de arquivo Excel configurei o "Spread sheet type (engine)" para "Excel 2007 XLSX (Apache POI)", na aba "Sheets" selecionei a planilha a ser importada do arquivo e em "Fields" também configurei a meta data.
   
      ![Input de Arquivo Excel](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/3_Excel_Input.png)
     
-   - Input de Arquivo Zip
+   - Para input de Arquivo Zip também usei o step de input de arquivo texto. Na aba "Content" selecionei o separador dos campos do arquivo e "Compression" Zip. Configurei também a meta data na aba "Fields".
     
      ![Input de Arquivo Zip](https://github.com/Anacaloi/ETL-PDI-Customer/blob/main/img/4_Zip_File_Input.png)
+    
+   - Utilizei o step "sort rows" para ordenar os registros de cada arquivo pelo campo "Customer ID" para prepará-los para o próximo passo
+   
+   - Para unificar a base de dados usei o step "Sorted Merge" utilizando como parâmetro o campo "Customer ID"
     
     
 - Limpeza
